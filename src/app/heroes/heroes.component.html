@@ -1,0 +1,8 @@
+<h1>Welcome heroes!</h1>
+<a href="">View Hero!</a>
+<li *ngFor="let hero of heros">
+    <button (click)="openDetails(hero)" style="cursor: pointer;">
+        <span>Hero </span>
+        <span>{{ hero.id }}</span>
+    </button>
+</li>
